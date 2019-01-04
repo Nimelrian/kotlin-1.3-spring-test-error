@@ -56,4 +56,11 @@ dependencies {
 
 dependencyManagement {
     imports { mavenBom("org.springframework.boot:spring-boot-dependencies:${springBootVersion}") }
+    dependencies {
+        dependency "org.jetbrains.kotlin:kotlin-stdlib-common:${kotlinVersion}"
+        dependency "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${kotlinVersion}"
+        dependency "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${kotlinVersion}"
+        dependency "org.jetbrains.kotlin:kotlin-stdlib:${kotlinVersion}"
+        dependency "org.jetbrains.kotlin:kotlin-reflect:${kotlinVersion}"
+    }
 }
